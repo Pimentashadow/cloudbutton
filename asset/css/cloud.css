@@ -1,0 +1,159 @@
+* {
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+
+:root {
+
+    /* Forma das bolinhas */
+    --circle: 50%;
+    --wh: 30px;
+    --hh: 30px;
+    /* fim */
+
+    /* Forma dos botões */
+    --br: 9px;
+    --fw: bold;
+    --pg: 10px 30px;
+    /* fim */
+
+    /* cores do botão */
+    --bg: black;
+    --tc: #ccc;
+    --brx: #7e57c2;
+    --gr: #25d366;
+    --ye: #fefc9f;
+    --oa:#0a9ad8;
+    /* fim */
+
+    /* efeitos */
+    --04: 0.4s ease;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border: none;
+    padding: var(--pg);
+    background-color: var(--tc);
+    border-radius: var(--br);
+    font-weight: bold;
+}
+
+
+/* containers das bolinhas */
+.topo {
+    position: absolute;
+    /* z-index: 2; */
+}
+
+.container0 {
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container1 {
+
+    top: 50%;
+    left: 46.5%;
+    transform: translate(-50%, -50%);
+}
+
+.container2 {
+
+    top: 50%;
+    left: 47.1%;
+    transform: translate(-50%, -50%);
+}
+
+.container3 {
+
+    top: 50%;
+    left: 53.5%;
+    transform: translate(-50%, -50%);
+}
+
+.container4 {
+
+    top: 50%;
+    left: 53.5%;
+    transform: translate(-50%, -50%);
+}
+
+.container5 {
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* fim */
+
+/* bolinhas */
+.container .clouds {
+    background-color: var(--tc);
+    height: var(--hh);
+    width: var(--wh);
+    border-radius: var(--circle);
+    transition: var(--04);
+}
+
+/* fim */
+
+/* Efeito de aparecimento */
+
+.container .buttons:hover .cloud0 {
+
+    transform: translateX(-300%);
+    background-color: var(--brx);
+}
+
+.container .buttons:hover .cloud1 {
+
+    background-color: var(--gr);
+    transform: translateY(50px);
+}
+
+.container .buttons:hover .cloud2 {
+
+    transform: translateY(-50px);
+    background-color: var(--ye);
+}
+
+.container .buttons:hover .cloud3 {
+
+    background-color: var(--bg);
+    transform: translateY(-50px);
+}
+
+.container .buttons:hover .cloud4 {
+
+    background-color: var(--tc);
+    transform: translateY(50px);
+}
+
+.container .buttons:hover .cloud5 {
+
+    background-color: var(--oa);
+    /* transform: translateX(-100%); */
+    transform: translateX(300%);
+}
+
+/* fim */

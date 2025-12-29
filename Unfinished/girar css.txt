@@ -1,0 +1,223 @@
+/* Neste cÃģdigo o botÃĢo tem uma posiÃ§ÃĢo absoluta*/
+* {
+    font-family: poppins, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+:root {
+    --circle: 50%;
+    --br: 9px;
+    --fw: bold;
+    --pg: 10px 30px;
+    --bg: black;
+    --bg2: #ccc;
+    --tc: #ccc;
+}
+
+
+button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-weight: var(--fw);
+    padding: var(--pg);
+    border-radius: var(--br);
+    border: none;
+    transition: 0.7s ease;
+
+    &:hover {
+        background-color: var(--bg);
+        color: var(--tc);
+
+    }
+}
+
+
+/* Containers */
+
+.container2 {
+    position: absolute;
+    left: 48.1%;
+    top: 48.5%;
+    transition: 0.7s ease;
+
+
+}
+
+.container3 {
+    position: absolute;
+    left: 50%;
+    top: 48.5%;
+    transition: 0.7s ease;
+
+
+}
+
+
+.container4 {
+    position: absolute;
+    left: 53.4%;
+    top: 48.6%;
+    transition: 0.7s ease;
+}
+
+.container5 {
+    position: absolute;
+    left: 53.4%;
+    top: 48.6%;
+    transition: 0.7s ease;
+
+}
+
+
+.container6 {
+    position: absolute;
+    left: 45%;
+    top: 48.6%;
+    transition: 0.7s ease;
+}
+
+.container7 {
+    position: absolute;
+    left: 49.2%;
+    top: 48.6%;
+    transition: 0.7s ease;
+}
+
+.container8 {
+    position: absolute;
+    left: 49.2%;
+    top: 48.6%;
+    transition: 0.7s ease;
+}
+
+
+.container9 {
+    position: absolute;
+    left: 45%;
+    top: 48.6%;
+    transition: 0.7s ease;
+  
+
+}
+
+
+/* Parte das bolinhas */
+.bolinhas2 {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.bolinhas3 {
+    width: 20px;
+    height: 20px;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+
+.bolinhas4 {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.bolinhas5 {
+    width: 20px;
+    height: 20px;
+    background-color: orangered;
+    border-radius: 50%;
+}
+
+.bolinhas6 {
+    width: 20px;
+    height: 20px;
+    background-color: cyan;
+    border-radius: 50%;
+}
+
+
+.bolinhas7 {
+    width: 20px;
+    height: 20px;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+
+.bolinhas8 {
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow;
+    border-radius: 50%;
+}
+
+.bolinhas9 {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+/* Efeito de hover nas bolinhas */
+.container:hover .container2 {
+    transform: translateX(-400%);
+}
+
+
+.container:hover .container3 {
+    transform: translateX(400%);
+}
+
+.container:hover .container4 {
+    transform: translateY(200%);
+}
+
+.container:hover .container5 {
+    transform: translateY(-200%);
+}
+
+.container:hover .container6 {
+    transform: translateY(-210%);
+
+}
+
+.container:hover .container7 {
+    transform: translateY(-210%);
+
+}
+
+.container:hover .container8 {
+    transform: translateY(210%);
+
+}
+
+.container:hover .container9 {
+    transform: translateY(210%);
+
+}
+
+/* 
+.container:hover .orbit2 {
+    animation: girar2 2s linear infinite;
+}
+
+@keyframes girar2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+} */

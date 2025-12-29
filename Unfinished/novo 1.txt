@@ -1,0 +1,73 @@
+    <div class="container">
+  <button>Hover</button>
+
+  <div class="orbit orbit1"><div class="bolinha"></div></div>
+  <div class="orbit orbit2"><div class="bolinha"></div></div>
+  <div class="orbit orbit3"><div class="bolinha"></div></div>
+  <div class="orbit orbit4"><div class="bolinha"></div></div>
+</div>
+
+
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Orbit containers posicionados ao redor do botão */
+.orbit {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  pointer-events: none;
+}
+
+.bolinha {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Efeito girar ao hover */
+.container:hover .orbit1 {
+  animation: girar1 2s linear infinite;
+}
+.container:hover .orbit2 {
+  animation: girar2 2s linear infinite;
+}
+.container:hover .orbit3 {
+  animation: girar3 2s linear infinite;
+}
+.container:hover .orbit4 {
+  animation: girar4 2s linear infinite;
+}
+
+/* Animações com rotações diferentes para distribuir as bolinhas */
+@keyframes girar1 {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes girar2 {
+  0% { transform: translate(-50%, -50%) rotate(90deg); }
+  100% { transform: translate(-50%, -50%) rotate(450deg); }
+}
+@keyframes girar3 {
+  0% { transform: translate(-50%, -50%) rotate(180deg); }
+  100% { transform: translate(-50%, -50%) rotate(540deg); }
+}
+@keyframes girar4 {
+  0% { transform: translate(-50%, -50%) rotate(270deg); }
+  100% { transform: translate(-50%, -50%) rotate(630deg); }
+}
